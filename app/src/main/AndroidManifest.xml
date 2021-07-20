@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.blood_bank_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LifeSavers.Activities.SearchResultActivity"></activity>
+        <activity android:name=".LifeSavers.Activities.SearchActivity" />
+        <activity android:name=".LifeSavers.Activities.RequestsActivity" />
+        <activity android:name=".LifeSavers.Activities.CreateRequestActivity"></activity>
+        <!-- <activity android:name=".LifeSavers.Activities.SearchUsersActivity_Unused" /> -->
+        <activity android:name=".LifeSavers.Activities.Profile" />
+        <activity android:name=".LifeSavers.Activities.Feedback" />
+        <activity android:name=".LifeSavers.Activities.AboutUs" />
+        <activity android:name=".LifeSavers.Activities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LifeSavers.Activities.LoginActivity" />
+        <activity android:name=".LifeSavers.Activities.RegisterActivity" />
+        <activity android:name=".LifeSavers.Activities.MainActivity" />
+    </application>
+
+</manifest>
